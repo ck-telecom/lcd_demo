@@ -16,14 +16,14 @@ see more via https://docs.zephyrproject.org/latest/develop/getting_started/index
 
 ## Build with west
 ```
-cd lcd_demo_workspace # make sure in this directory
+cd lcd_demo_workspace/app # make sure in this directory
 
-west build -b <board> <project>
+west build -b sf32lb52_devkit_lcd .
 ```
 
 ## Flash
 ```
 west flash or
 
-west flash --port <your serial port>
+west flash --port=<your serial port> (COM5 eg.)
 ```
