@@ -14,7 +14,9 @@ manifest:
       west-commands: scripts/west-commands.yml
       import:
         name-allowlist:
-          - cmsis
+          - cmsis_6
           - picolibc
+          - hal_sifli
+
   self:
     path: lcd_demo

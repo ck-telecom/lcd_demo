@@ -3,9 +3,9 @@
 ```
 pip install west
 
-west init -m https://github.com/ck-telecom/zephyr-SiFli.git zephyr_sifli
+west init -m https://github.com/ck-telecom/lcd-demo.git lcd_demo_workspace
 
-cd zephyr_sifli
+cd lcd_demo_workspace
 
 west update
 west zephyr-export
@@ -16,7 +16,7 @@ see more via https://docs.zephyrproject.org/latest/develop/getting_started/index
 
 ## Build with west
 ```
-cd zephyr_sifli # make sure in this directory
+cd lcd_demo_workspace # make sure in this directory
 
 west build -b <board> <project>
 ```
@@ -27,6 +27,3 @@ west flash or
 
 west flash --port <your serial port>
 ```
-
-## Note:
-- Currently board only support em-lb525
