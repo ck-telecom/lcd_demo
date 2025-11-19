@@ -1,0 +1,20 @@
+manifest:
+  version: "1.2"
+  remotes:
+    - name: zephyrproject-rtos
+      url-base: https://github.com/zephyrproject-rtos
+
+  defaults:
+    remote: zephyrproject-rtos
+
+  projects:
+    - name: lcd_demo
+      revision: v4.3.0
+      clone-depth: 1
+      west-commands: scripts/west-commands.yml
+      import:
+        name-allowlist:
+          - cmsis
+          - picolibc
+  self:
+    path: lcd_demo
