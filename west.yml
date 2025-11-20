@@ -3,20 +3,31 @@ manifest:
   remotes:
     - name: zephyrproject-rtos
       url-base: https://github.com/zephyrproject-rtos
+    - name: gitee-zephyr
+      url-base: https://gitee.com/fwatch
+    - name: ck-telecom
+      https://github.com/ck-telecom
 
   defaults:
     remote: zephyrproject-rtos
 
   projects:
     - name: zephyr
-      revision: v4.3.0
+      remote: gitee-zephyr
+      revision: sf32lb58_bringup
       clone-depth: 1
       west-commands: scripts/west-commands.yml
       import:
         name-allowlist:
           - cmsis_6
           - picolibc
-          - hal_sifli
+
+    - name: hal_sifli
+      remote: ck-telecom
+      revision: main
+      path: modules/hal/sifli
+      groups:
+        - hal
 
   self:
     path: lcd_demo
