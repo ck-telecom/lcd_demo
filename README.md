@@ -18,7 +18,7 @@ see more via https://docs.zephyrproject.org/latest/develop/getting_started/index
 ```
 cd lcd_demo_workspace/app # make sure in this directory
 
-west build -b sf32lb52_devkit_lcd .
+west build -b sf32lb58_devkit_lcd .
 ```
 
 ## Flash
